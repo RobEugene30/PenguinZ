@@ -1,0 +1,230 @@
+User
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Forum</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    aside {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 200px;
+        padding: 20px;
+        background-color: #f4f4f4;
+        overflow-y: auto;
+    }
+    .post {
+        margin-left: 240px;
+        padding: 20px;
+        background-color: #f9f9f9;
+    }
+    .comment {
+        margin-left: 20px;
+        padding: 10px;
+        background-color: #f0f0f0;
+    }
+    .user-info {
+        margin-top: 10px;
+        background-color: #ccc;
+        padding: 10px;
+    }
+    .upvote-counter {
+        display: inline-block;
+        margin-left: 10px;
+    }
+    .tags {
+        margin-top: 20px;
+    }
+    .tags label {
+        display: block;
+    }
+    .tags select {
+        width: 150px;
+    }
+    .tags label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.tags input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.tags span {
+    background-color: #024BAD;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.comment-button {
+        background-color: #024BAD;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+</style>
+
+</head>
+<body>
+
+<div class="menu">
+    <a href="map.html">Map</a>
+    <a href="Forum.html">Forum</a>
+    <a href="Homepage.html"><img src="/YAWA - HACKATHON/Penguinz/images/1.png" alt="PenguinZ Logo"></a>
+    <a href="#">Library</a>
+    <a href="#">About</a>
+</div>
+<div class="content">
+    <aside>
+        <form>
+            <h2>Search by Tags</h2>
+            <input type="text" placeholder="Search tags...">
+            <input type="submit" value="Search">
+        </form>
+        <p>Location Tags</p>
+        <div class="tags">
+            <label><input type="checkbox" name="tag" value="tag1"> Region 1: Ilocos Region</label>
+                        <label><input type="checkbox" name="tag" value="tag2"> Region 2: Cagayan Region</label>
+                        <label><input type="checkbox" name="tag" value="tag1"> Region 3: Central Luzon</label>
+                        <label><input type="checkbox" name="tag" value="tag2"> Region 4-A: CALABARZON</label>
+                        <label><input type="checkbox" name="tag" value="tag1"> Region 4-B: MIMAROPA</label>
+                        <label><input type="checkbox" name="tag" value="tag2"> Region 5: Bicol Region</label>
+                        <label><input type="checkbox" name="tag" value="tag1"> Region 6: Western Visayas Region</label>
+                        <label><input type="checkbox" name="tag" value="tag2"> Region 7: Central Visayas Region</label>
+                        <label><input type="checkbox" name="tag" value="tag1"> Region 8: Eastern Visayas Region</label>
+                        <label><input type="checkbox" name="tag" value="tag2"> Region 9: Zamboanga Region</label>
+                        <label><input type="checkbox" name="tag" value="tag1"> Ragion 10: Northern Mindanao Region</label>
+                        <label><input type="checkbox" name="tag" value="tag2"> Region 11: Davao Region</label>
+                        <label><input type="checkbox" name="tag" value="tag1"> Region 12: SOCCSKSARGEN</label>
+                        <label><input type="checkbox" name="tag" value="tag2"> Region 13: CARAGA </label>
+                        <label><input type="checkbox" name="tag" value="tag1"> CAR</label>
+                        <label><input type="checkbox" name="tag" value="tag2"> NCR</label>
+                        <label><input type="checkbox" name="tag" value="tag2"> BARMM</label>
+        </div>
+
+        <p>Dialect Tags</p>
+        <div class="tags">
+            <label><input type="checkbox" name="tag" value="tag1"> Tagalog </label>
+            <label><input type="checkbox" name="tag" value="tag2"> Bisaya </label>
+            <label><input type="checkbox" name="tag" value="tag1"> Ilonggo </label>
+            <label><input type="checkbox" name="tag" value="tag2"> Hiligaynon </label>
+            <label><input type="checkbox" name="tag" value="tag1"> Bicol </label>
+            <label><input type="checkbox" name="tag" value="tag2"> Waray </label>
+            <label><input type="checkbox" name="tag" value="tag1"> Pangasinan </label>
+            <label><input type="checkbox" name="tag" value="tag2"> Maguindanao </label>
+            <label><input type="checkbox" name="tag" value="tag1"> Tausug </label>
+            <label><input type="checkbox" name="tag" value="tag2"> Chavacano </label>
+            <label><input type="checkbox" name="tag" value="tag1"> Maranao </label>
+            <label><input type="checkbox" name="tag" value="tag2"> Kapampangan </label>
+        </div>
+    </aside>
+
+    <div class="post">
+        <h2>Post a Question</h2>
+        <form>
+            <textarea rows="5" cols="125" placeholder="Write your question here..."></textarea><br>
+            <h3>Word to Define: </h3>
+            <textarea rows="2" cols="25" placeholder="Word to define..."></textarea><br>
+          
+            <p>Location Tags</p>
+            <div class="tags">
+                <select name="tags" multiple>
+                    <option value="tag1">Region 1</option>
+                    <option value="tag2">Region 2</option>
+                    <option value="tag1">Region 3</option>
+                    <option value="tag2">Region 4-A</option>
+                    <option value="tag2">Region 4-B</option>
+                    <option value="tag1">Region 5</option>
+                    <option value="tag2">Region 6</option>
+                    <option value="tag1">Region 7</option>
+                    <option value="tag2">Region 8</option>
+                    <option value="tag1">Region 9</option>
+                    <option value="tag2">Region 10</option>
+                    <option value="tag1">Region 11</option>
+                    <option value="tag2">Region 12</option>
+                    <option value="tag1">Region 13</option>
+                    <option value="tag2">NCR</option>
+                    <option value="tag1">CAR</option>
+                    <option value="tag2">BARMM</option>
+
+                </select>
+            </div>
+            <p>Dialect Tags</p>
+            <div class="tags">
+                <select name="additionalTags" multiple>
+                    <option value="additionalTag1"> Tagalog </option>
+                    <option value="additionalTag2"> Bisaya </option>
+                    <option value="additionalTag2"> Ilonggo </option>
+                    <option value="additionalTag2"> Hiligaynon </option>
+                    <option value="additionalTag2"> Bicol </option>
+                    <option value="additionalTag2"> Waray </option>
+                    <option value="additionalTag2"> Pangasinan </option>
+                    <option value="additionalTag2"> Maguindanao </option>
+                    <option value="additionalTag2"> Tausug </option>
+                    <option value="additionalTag2"> Chavacano </option>
+                    <option value="additionalTag2"> Maranao </option>
+                    <option value="additionalTag2"> Kapampangan </option>
+                    
+                </select>
+            </div>
+            <input type="submit" value="Post">
+        </form>
+    </div>
+</div>
+
+    <div class="post">
+        <h2>Ano po ibig sabihin ng "gyud" sa Bisaya?</h2>
+        <p>I was talking po kasi sa friend ko from Cebu tapos lagi po niya nababanggit yung term, gusto ko po siya isurprise na alama ko rin po yung word. Send help po, Thank you!</p>
+        <div class="user-info">
+            User: Gedro Penduko<br>
+            Verified User
+        </div>
+        <div class="comment">
+            <p>Hello, depende po sa situation or sa context po nung pag gamit ng "gyud" pero mostly, ginagamit po ito pang exxggerate ng sinasabi po nila. Hope this helps </p>
+            <div class="user-info">
+                User: Bob Johnson<br>
+                Verified Expert
+            </div>
+            <button onclick="upvote(this)">Upvote</button>
+            <span class="upvote-counter">0</span>
+        </div>
+        <div class="comment">
+            <p>Ginagamit po ang "gyud" tuwing gusto mag "double-down" nung nagsasalita po sa sinasabi niya.</p>
+            <div class="user-info">
+                User: Emily Brown<br>
+                Unverified Expert
+            </div>
+            <button onclick="upvote(this)">Upvote</button>
+            <span class="upvote-counter">0</span>
+        </div>
+        <div class="tags">
+            Tags: <span>Region 4-A</span>, <span>Bisaya</span>
+        </div>
+        <button class="comment-button">Comment</button>
+    </div>
+
+<script>
+    function upvote(button) {
+        var counter = button.nextElementSibling;
+        counter.textContent = parseInt(counter.textContent) + 1;
+    }
+</script>
+
+</body>
+</html>

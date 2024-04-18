@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Library</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    aside {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 200px;
+        padding: 20px;
+        background-color: #f4f4f4;
+        overflow-y: auto;
+    }
+    .post {
+        margin-left: 240px;
+        padding: 20px;
+        background-color: #f9f9f9;
+    }
+    .comment {
+        margin-left: 20px;
+        padding: 10px;
+        background-color: #f0f0f0;
+    }
+    .user-info {
+        margin-top: 10px;
+        background-color: #ccc;
+        padding: 10px;
+    }
+    .upvote-counter {
+        display: inline-block;
+        margin-left: 10px;
+    }
+    .tags {
+        margin-top: 20px;
+    }
+    .tags label {
+        display: block;
+    }
+    .tags select {
+        width: 150px;
+    }
+    .tags label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.tags input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.tags span {
+    background-color: #024BAD;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.comment-button {
+        background-color: #024BAD;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    .tag-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: right;
+        margin-top: 20px;
+        margin-left: 50px;
+    }
+
+    .tag {
+        background-color: #f9f9f9;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .tag:hover {
+        background-color: #024BAD;
+        color: white;
+    }
+
+</style>
+
+</head>
+<body>
+
+<div class="menu">
+    <a href="map.html">Map</a>
+    <a href="Forum.html">Forum</a>
+    <a href="Homepage.html"><img src="/YAWA - HACKATHON/Penguinz/images/1.png" alt="PenguinZ Logo"></a>
+    <a href="#">Library</a>
+    <a href="#">About</a>
+</div>
+<div class="content">
+    <aside>
+        <form>
+            <h2>Search</h2>
+            <input type="text" placeholder="Enter here...">
+            <input type="submit" value="Search">
+        </form>
+        
+        <div class="tags">
+            <label><input type="checkbox" name="tag" value="tag1"> Region 1: Ilocos Region</label>
+                        <label><input type="checkbox" name="tag" value="tag2"> Region 2: Cagayan Region</label>
+                        <label><input type="checkbox" name="tag" value="tag1"> Region 3: Central Luzon</label>
+                        <label><input type="checkbox" name="tag" value="tag2"> Region 4-A: CALABARZON</label>
+                        <label><input type="checkbox" name="tag" value="tag1"> Region 4-B: MIMAROPA</label>
+                        <label><input type="checkbox" name="tag" value="tag2"> Region 5: Bicol Region</label>
+                        <label><input type="checkbox" name="tag" value="tag1"> Region 6: Western Visayas Region</label>
+                        <label><input type="checkbox" name="tag" value="tag2"> Region 7: Central Visayas Region</label>
+                        <label><input type="checkbox" name="tag" value="tag1"> Region 8: Eastern Visayas Region</label>
+                        <label><input type="checkbox" name="tag" value="tag2"> Region 9: Zamboanga Region</label>
+                        <label><input type="checkbox" name="tag" value="tag1"> Ragion 10: Northern Mindanao Region</label>
+                        <label><input type="checkbox" name="tag" value="tag2"> Region 11: Davao Region</label>
+                        <label><input type="checkbox" name="tag" value="tag1"> Region 12: SOCCSKSARGEN</label>
+                        <label><input type="checkbox" name="tag" value="tag2"> Region 13: CARAGA </label>
+                        <label><input type="checkbox" name="tag" value="tag1"> CAR</label>
+                        <label><input type="checkbox" name="tag" value="tag2"> NCR</label>
+                        <label><input type="checkbox" name="tag" value="tag2"> BARMM</label>
+        </div>
+    </aside>
+</div>
+
+</br>
+</br>
+</br>
+</br>
+<div class="tag-container">
+    <div class="tag">Tagalog</div>
+    <div class="tag">Bisaya</div>
+    <div class="tag">Ilonggo</div>
+    <div class="tag">Hiligaynon</div>
+    <div class="tag">Bicol</div>
+    <div class="tag">Waray</div>
+    <div class="tag">Pangasinan</div>
+    <div class="tag">Maguindanao</div>
+    <div class="tag">Tausug</div>
+    <div class="tag">Maranao</div>
+    
+    
+</div>
+
+
+</body>
+</html>
